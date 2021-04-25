@@ -1,0 +1,13 @@
+C:\Users\vano\Desktop\programming\c#\concessionario\concessionario\bin\Debug\netcoreapp3.1\concessionario.exe
+C:\Users\vano\Desktop\programming\c#\concessionario\concessionario\bin\Debug\netcoreapp3.1\concessionario.deps.json
+C:\Users\vano\Desktop\programming\c#\concessionario\concessionario\bin\Debug\netcoreapp3.1\concessionario.runtimeconfig.json
+C:\Users\vano\Desktop\programming\c#\concessionario\concessionario\bin\Debug\netcoreapp3.1\concessionario.runtimeconfig.dev.json
+C:\Users\vano\Desktop\programming\c#\concessionario\concessionario\bin\Debug\netcoreapp3.1\concessionario.dll
+C:\Users\vano\Desktop\programming\c#\concessionario\concessionario\bin\Debug\netcoreapp3.1\concessionario.pdb
+C:\Users\vano\Desktop\programming\c#\concessionario\concessionario\obj\Debug\netcoreapp3.1\concessionario.csprojAssemblyReference.cache
+C:\Users\vano\Desktop\programming\c#\concessionario\concessionario\obj\Debug\netcoreapp3.1\concessionario.AssemblyInfoInputs.cache
+C:\Users\vano\Desktop\programming\c#\concessionario\concessionario\obj\Debug\netcoreapp3.1\concessionario.AssemblyInfo.cs
+C:\Users\vano\Desktop\programming\c#\concessionario\concessionario\obj\Debug\netcoreapp3.1\concessionario.csproj.CoreCompileInputs.cache
+C:\Users\vano\Desktop\programming\c#\concessionario\concessionario\obj\Debug\netcoreapp3.1\concessionario.dll
+C:\Users\vano\Desktop\programming\c#\concessionario\concessionario\obj\Debug\netcoreapp3.1\concessionario.pdb
+C:\Users\vano\Desktop\programming\c#\concessionario\concessionario\obj\Debug\netcoreapp3.1\concessionario.genruntimeconfig.cache

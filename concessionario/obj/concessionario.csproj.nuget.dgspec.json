@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\vano\\Desktop\\programming\\c#\\concessionario\\concessionario\\concessionario.csproj": {}
   },
   "projects": {
@@ -13,22 +12,9 @@
         "projectPath": "C:\\Users\\vano\\Desktop\\programming\\c#\\concessionario\\concessionario\\concessionario.csproj",
         "packagesPath": "C:\\Users\\vano\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\vano\\Desktop\\programming\\c#\\concessionario\\concessionario\\obj\\",
-=======
-    "C:\\Users\\vanoncini.18008\\Desktop\\c#\\concessionaria\\concessionario\\concessionario.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\vanoncini.18008\\Desktop\\c#\\concessionaria\\concessionario\\concessionario.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\vanoncini.18008\\Desktop\\c#\\concessionaria\\concessionario\\concessionario.csproj",
-        "projectName": "concessionario",
-        "projectPath": "C:\\Users\\vanoncini.18008\\Desktop\\c#\\concessionaria\\concessionario\\concessionario.csproj",
-        "packagesPath": "C:\\Users\\vanoncini.18008\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vanoncini.18008\\Desktop\\c#\\concessionaria\\concessionario\\obj\\",
->>>>>>> e157bf2ba0169972e5cafb71b9f59f8ef812b2f9
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vanoncini.18008\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vano\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     }

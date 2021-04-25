@@ -6,5 +6,6 @@ namespace concessionario
 {
     class seller
     {
+        private List<car> cars = new List<car>)();
     }
 }
