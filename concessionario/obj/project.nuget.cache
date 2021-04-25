@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "nBrZtjh4p4k8lJs3NnhV2dMxTIf2j6EVL8U4hoXoMTVkohZALaj2RGA15N6gTuOvf0PBqAo639CK36Pn3L+1Ig==",
   "success": true,
   "projectFilePath": "C:\\Users\\vano\\Desktop\\programming\\c#\\concessionario\\concessionario\\concessionario.csproj",
+=======
+  "dgSpecHash": "epmVLUywHkRMo7dq1dDHd2S46yby7Yj33Rlf6EuNTKbYc0+LRezSKhep4UcLaDH6Y3CKsvc6Hr8B2ZvD1Vz22w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vanoncini.18008\\Desktop\\c#\\concessionaria\\concessionario\\concessionario.csproj",
+>>>>>>> e157bf2ba0169972e5cafb71b9f59f8ef812b2f9
   "expectedPackageFiles": [],
   "logs": []
 }

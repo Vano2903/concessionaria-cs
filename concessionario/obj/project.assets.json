@@ -8,19 +8,27 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\vano\\.nuget\\packages\\": {}
+    "C:\\Users\\vanoncini.18008\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\vano\\Desktop\\programming\\c#\\concessionario\\concessionario\\concessionario.csproj",
       "projectName": "concessionario",
       "projectPath": "C:\\Users\\vano\\Desktop\\programming\\c#\\concessionario\\concessionario\\concessionario.csproj",
       "packagesPath": "C:\\Users\\vano\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\vano\\Desktop\\programming\\c#\\concessionario\\concessionario\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\vanoncini.18008\\Desktop\\c#\\concessionaria\\concessionario\\concessionario.csproj",
+      "projectName": "concessionario",
+      "projectPath": "C:\\Users\\vanoncini.18008\\Desktop\\c#\\concessionaria\\concessionario\\concessionario.csproj",
+      "packagesPath": "C:\\Users\\vanoncini.18008\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vanoncini.18008\\Desktop\\c#\\concessionaria\\concessionario\\obj\\",
+>>>>>>> e157bf2ba0169972e5cafb71b9f59f8ef812b2f9
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vanoncini.18008\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
