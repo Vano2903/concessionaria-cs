@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vano\\Desktop\\c#\\concessionario\\concessionario\\concessionario.csproj",
+      "projectUniqueName": "C:\\Users\\vano\\Desktop\\programming\\c#\\concessionario\\concessionario\\concessionario.csproj",
       "projectName": "concessionario",
-      "projectPath": "C:\\Users\\vano\\Desktop\\c#\\concessionario\\concessionario\\concessionario.csproj",
+      "projectPath": "C:\\Users\\vano\\Desktop\\programming\\c#\\concessionario\\concessionario\\concessionario.csproj",
       "packagesPath": "C:\\Users\\vano\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vano\\Desktop\\c#\\concessionario\\concessionario\\obj\\",
+      "outputPath": "C:\\Users\\vano\\Desktop\\programming\\c#\\concessionario\\concessionario\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vano\\AppData\\Roaming\\NuGet\\NuGet.Config",
