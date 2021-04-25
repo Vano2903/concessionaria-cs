@@ -6,18 +6,16 @@ namespace concessionario
 {
     class car
     {
-        protected String marca;
-        protected String modello;
-        protected String colore;
-        protected String powerSource;
-        protected int id;
-        protected int km;
-        protected int registrationYear;
+        private String marca;
+        private String modello;
+        private String colore;
+        private String powerSource;
+        private int id;
+        private int km;
+        private int registrationYear;
+
+        public car() { }
 
 
-        public void init()
-        {
-
-        }
     }
 }
