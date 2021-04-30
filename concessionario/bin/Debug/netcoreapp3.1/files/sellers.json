@@ -1,0 +1,15 @@
+
+[
+    {   
+        "username":"vanosko",
+        "password":"compagnia",
+        "lvlAuth": 4,
+        "id": 1
+    },
+    {   
+        "username":"mora",
+        "password":"morella",
+        "lvlAuth": 4,
+        "id": 2
+    }
+]

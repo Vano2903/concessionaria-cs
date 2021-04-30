@@ -8,7 +8,5 @@ namespace concessionario
         {
             Console.WriteLine("ciao");
         }
-    
-        
     }
 }

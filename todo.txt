@@ -1,0 +1,6 @@
+classe log
+
+cose da loggare:
+    registrazione utente
+    login utente
+    vendita auto
