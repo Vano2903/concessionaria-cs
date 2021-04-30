@@ -15,6 +15,8 @@ namespace concessionario
         private int id;
         private int km;
         private int registrationYear;
+        private bool isNew;
+        private bool isUsed;
         private List<string> con; //just for the config file
 
         private void writeId(int iaaaa)
@@ -28,6 +30,7 @@ namespace concessionario
             sw.Close();
 
         }
+
         private int getLastId()
         {
             string path = @"files\config.json";
@@ -53,10 +56,12 @@ namespace concessionario
             powerSource = "";
             km = 0;
             registrationYear = 0;
+            isNew = false;
+            isUsed = false;
             genId();
         }
 
-        public car(string ma, string mo, string co, string ps, int km, int ry)
+        public car(string ma, string mo, string co, string ps, int km, int ry, bool n, bool u)
         {
             marca = ma;
             modello = mo;
@@ -64,6 +69,8 @@ namespace concessionario
             powerSource = ps;
             this.km = km;
             registrationYear = ry;
+            isNew = n;
+            isUsed = u;
             genId();
         }
 
