@@ -11,3 +11,5 @@ C:\Users\vano\Desktop\programming\c#\concessionario\concessionario\obj\Debug\net
 C:\Users\vano\Desktop\programming\c#\concessionario\concessionario\obj\Debug\netcoreapp3.1\concessionario.dll
 C:\Users\vano\Desktop\programming\c#\concessionario\concessionario\obj\Debug\netcoreapp3.1\concessionario.pdb
 C:\Users\vano\Desktop\programming\c#\concessionario\concessionario\obj\Debug\netcoreapp3.1\concessionario.genruntimeconfig.cache
+C:\Users\vano\Desktop\programming\c#\concessionario\concessionario\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\vano\Desktop\programming\c#\concessionario\concessionario\obj\Debug\netcoreapp3.1\concessionario.csproj.CopyComplete
