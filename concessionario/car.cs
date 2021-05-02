@@ -16,6 +16,7 @@ namespace concessionario
         private int id;
         private int km;
         private int registrationYear;
+        private float price;
         private bool isNew;
         private bool isUsed;
         private List<string> con; //just for the config file
@@ -28,6 +29,7 @@ namespace concessionario
         public int Id { get => id; }
         public int Km { get => km; set => km = value; }
         public int RegistrationYear { get => registrationYear; set => registrationYear = value; }
+        public float Price { get => price; set => price = value; }
         public bool IsNew { get => isNew; set => isNew = value; }
         public bool IsUsed { get => isUsed; set => isUsed = value; }
         
@@ -69,11 +71,12 @@ namespace concessionario
             powerSource = "";
             km = 0;
             registrationYear = 0;
+            price = 0.0f;
             isNew = false;
             isUsed = false;
             genId();
         }
-        public car(string ma, string mo, string co, string ps, int km, int ry, bool n, bool u)
+        public car(string ma, string mo, string co, string ps, int km, int ry, float pr, bool n, bool u)
         {
             marca = ma;
             modello = mo;
@@ -81,6 +84,7 @@ namespace concessionario
             powerSource = ps;
             this.km = km;
             registrationYear = ry;
+            price = pr;
             isNew = n;
             isUsed = u;
             genId();
