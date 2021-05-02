@@ -8,6 +8,7 @@ namespace concessionario
 {
     class car
     {
+        //atrtibuti
         private String marca;
         private String modello;
         private String colore;
@@ -18,7 +19,20 @@ namespace concessionario
         private bool isNew;
         private bool isUsed;
         private List<string> con; //just for the config file
+        
+        //get e set
+        public String Marca { get => marca; set => marca = value; }
+        public String Modello { get => modello; set => modello = value; }
+        public String Colore { get => colore; set => colore = value; }
+        public String PowerSource { get => powerSource; set => powerSource = value; }
+        public int Id { get => id; }
+        public int Km { get => km; set => km = value; }
+        public int RegistrationYear { get => registrationYear; set => registrationYear = value; }
+        public bool IsNew { get => isNew; set => isNew = value; }
+        public bool IsUsed { get => isUsed; set => isUsed = value; }
+        
 
+        //privati
         private void writeId(int iaaaa)
         {
             string path = @"files\config.json";
@@ -30,7 +44,6 @@ namespace concessionario
             sw.Close();
 
         }
-
         private int getLastId()
         {
             string path = @"files\config.json";
@@ -42,13 +55,13 @@ namespace concessionario
             sr.Close();
             return int.Parse(con[0]);
         }
-
         private void genId()
         {
             id = getLastId() + 1;
             writeId(id);
         }
 
+        //costruttori
         public car() {
             marca = "";
             modello = "";
@@ -60,7 +73,6 @@ namespace concessionario
             isUsed = false;
             genId();
         }
-
         public car(string ma, string mo, string co, string ps, int km, int ry, bool n, bool u)
         {
             marca = ma;
@@ -73,7 +85,5 @@ namespace concessionario
             isUsed = u;
             genId();
         }
-
-
     }
 }
