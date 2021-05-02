@@ -11,8 +11,14 @@ namespace concessionario {
         //attributi
         private seller sel;
 
+        //metodi privati
+
+
+        //metodi pubblici
+        
+
         //costruttori
-        private carDealership() {
+        public carDealership() {
             sel = new seller();
         }
     }
