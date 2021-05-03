@@ -4,10 +4,8 @@ using System.Text;
 using Newtonsoft.Json;
 using System.IO;
 
-namespace concessionario
-{
-    class car
-    {
+namespace concessionario {
+    class car {
         //atrtibuti
         private String marca;
         private String modello;
@@ -22,7 +20,7 @@ namespace concessionario
         private List<string> con; //just for the config file
         
         //get e set
-        public String Marca { get => marca; set => marca = value; }
+        public String Marca { get => marca;  set => marca = value; }
         public String Modello { get => modello; set => modello = value; }
         public String Colore { get => colore; set => colore = value; }
         public String PowerSource { get => powerSource; set => powerSource = value; }
@@ -33,7 +31,6 @@ namespace concessionario
         public bool IsNew { get => isNew; set => isNew = value; }
         public bool IsUsed { get => isUsed; set => isUsed = value; }
         
-
         //privati
         private void writeId(int iaaaa)
         {
