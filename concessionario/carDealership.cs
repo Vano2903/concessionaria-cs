@@ -15,7 +15,9 @@ namespace concessionario {
 
 
         //metodi pubblici
-        
+        public bool login(string name, string pass) {
+            return sel.login(name, pass);
+        }
 
         //costruttori
         public carDealership() {

@@ -1,14 +1,14 @@
 
 [
     {   
-        "username":"vanosko",
-        "password":"compagnia",
+        "username":"a",
+        "password":"a",
         "lvlAuth": 4,
         "id": 1
     },
     {   
-        "username":"mora",
-        "password":"morella",
+        "username":"vano",
+        "password":":D",
         "lvlAuth": 4,
         "id": 2
     }
