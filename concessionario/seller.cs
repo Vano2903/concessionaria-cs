@@ -19,20 +19,18 @@
                     found.Add(a);
                 }            }            return found;        }
         public List<car> searchBetweenPrices(float min, float max) { 
+            
             List<car> found = new List<car>();
             foreach (car a in cars) {
-                if (a.Price >= min && a.Price <= max) {
-                    found.Add(a);
-                }
+                found.Add(min == -1 ? a.Price <= max ? a : null : max == -1 ? a.Price >= min ? a : null : a.Price >= min && a.Price <= max ? a : null);
             }
+                found.RemoveAll(item => item == null);
             return found;
         }
         public List<car> searchIsNew(bool isNew) {
             List<car> found = new List<car>();
             foreach(car a in cars) {
-                if (a.IsNew == isNew) {
-                    found.Add(a);
-                }
+                found.Add(a.IsNew == isNew ? a : null);
             }
             return found;
         }        public List<car> searchIsUsed(bool isUsed) {

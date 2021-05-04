@@ -1,13 +1,26 @@
 ﻿using System;
 
 namespace concessionario {
-   
+        struct carSearch {
+            public String marca;
+            public String modello;
+            public String colore;
+            public int km;
+            public int registrationYear;
+            public float minPrice;
+            public float maxPrice;
+            public bool isNew;
+            public bool isUsed;
+        }
+
     class Program {
+        
+
         static void Main(string[] args) {
             bool logged = false;
             bool quit = false;
-               
-            Console.WriteLine("concessionaria :D");        
+
+            Console.WriteLine("concessionaria :D");
             carDealership cd = new carDealership();
             while (!quit) {
                 if (logged) {
@@ -24,28 +37,42 @@ namespace concessionario {
                         }
                     }
                 }
-                /*
-                 switch (type)
-                {
-                    case 0: //marca
-
-                        break;
-                    case 1: //modello
-                        break;
-                    case 3: //colore
-                        break;
-                    case 4: //powerSource
-                        break;
-                    case 5: //km
-                        break;
-                    case 6: //registrationYear
-                        break;
-                    case 7: //isNew
-                        break;
-                    case 8: //isUsed
-                        break
-                }*/
+                 
             }
+        }
+
+        static public bool Switch() {
+            string choiseS;
+
+            string toPrint = "Opzioni disponibili \n1) ricerca auto \n2) compra auto \n3)vendi auto";
+            Console.WriteLine(toPrint);
+            choiseS = Console.ReadLine();
+                switch (int.Parse(choiseS)) {
+                    case 1:
+                        handlerSearch();
+                    break;
+
+                    case 2:
+                        handerBuy();
+                    break;
+
+                    case 3:
+                        handerSell();
+                    break;
+            }
+            return true;
+        }
+
+        static public void handlerSearch() {
+
+        }
+
+        static public void handerBuy() {
+
+        }
+
+        static public void handerSell() {
+
         }
 
         static public (string, string) loginInput() {
