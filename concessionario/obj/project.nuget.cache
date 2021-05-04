@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "smOYimum5Or7OLrw+lCWh+kzSbNZ9F4lF2xebKKQfDp1sFz1EPKsY3hERUPpcQjG1ROTcoet5CeylYp/Rvuslg==",
+  "dgSpecHash": "f7LwVR0hvYT5tzSkc8sq5lHA97OW2pM0MOQTmhSLxAsCD0ReIGO4ljYftGXn+wK6fKe3pR0cMASupNYEOg5Pmw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vano\\Desktop\\programming\\c#\\concessionario\\concessionario\\concessionario.csproj",
+  "projectFilePath": "C:\\Users\\vanoncini.18008\\Desktop\\c#\\concessionaria\\concessionario\\concessionario.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vano\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\vanoncini.18008\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }
