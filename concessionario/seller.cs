@@ -47,5 +47,36 @@
                 }
             }            return null;        }
 
+        public List<car> customSearch(carSearch obj, bool condition) {
+            //0 marca, 1 modello, 2 colore, 3 powerSource
+            //4 km, 5 prezzo min, 6 prezzo max, 7 isNew, 8 isUsed
+            //true = and, false = or
+            List<car> found = new List<car>();
+
+            foreach (car car in cars) {
+                if (car.Marca == obj.marca) {
+                    
+                }
+                if (car.Modello == obj.modello) {
+                    
+                }
+            }
+            int i = 0;
+            if (condition) {
+                do {
+                    if (cars[i].Marca != obj.marca || cars[i].Modello != obj.modello || cars[i].Colore != obj.colore || cars[i].PowerSource != obj.powersource) {
+                        i++;
+                    }
+                } while (i < cars.Count);
+            } else {
+                do {
+                    if (cars[i].Marca != obj.marca || cars[i]) {
+                        i++;
+                    }
+                } while (i < cars.Count);
+            }
+            return found;
+        }
+
         //costruttori
         public seller() {            cars = new List<car>();            username = "";            password = "";            //lvlAuth = 0;            genId();        }    }}
