@@ -5,6 +5,7 @@ namespace concessionario {
             public String marca;
             public String modello;
             public String colore;
+            public String powerSource;
             public int km;
             public int registrationYear;
             public float minPrice;

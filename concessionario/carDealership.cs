@@ -19,7 +19,7 @@ namespace concessionario {
             return sel.login(name, pass);
         }
 
-        public (List<car>, bool) customSearch(carSearch obj, bool condition ){
+        public (List<car>, bool) customSearch(carSearch obj, bool condition) {
             //0 marca, 1 modello, 2 colore, 3 powerSource
             //4 km, 5 prezzo min, 6 prezzo max, 7 isNew, 8 isUsed
             //true = and, false = or
@@ -36,9 +36,9 @@ namespace concessionario {
             scanned.Add(obj.isUsed != false ? sel.searchIsUsed(obj.isUsed) : null);
             scanned.Add(sel.searchBetweenPrices(obj.minPrice, obj.maxPrice));
 
-            foreach(List<car> cars in scanned) {     //CONTROLLO MULTIRICERCA 
+            foreach (List<car> cars in scanned) {     //CONTROLLO MULTIRICERCA 
                 if (condition) {
-                    if () { 
+                    if () {
                         found.Add();
                     }
                 } else {
