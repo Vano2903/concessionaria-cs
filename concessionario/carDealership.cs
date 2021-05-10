@@ -36,9 +36,9 @@ namespace concessionario {
             scanned.Add(obj.isUsed != false ? sel.searchIsUsed(obj.isUsed) : null);
             scanned.Add(sel.searchBetweenPrices(obj.minPrice, obj.maxPrice));
 
-            foreach(List<car> cars in scanned) {
+            foreach(List<car> cars in scanned) {     //CONTROLLO MULTIRICERCA 
                 if (condition) {
-                    if () { //CONTROLLO MULTIRICERCA 
+                    if () { 
                         found.Add();
                     }
                 } else {

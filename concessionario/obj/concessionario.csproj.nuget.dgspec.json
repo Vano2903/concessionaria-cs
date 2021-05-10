@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vanoncini.18008\\Desktop\\c#\\concessionaria\\concessionario\\concessionario.csproj": {}
+    "C:\\Users\\vano\\Desktop\\programming\\c#\\concessionario\\concessionario\\concessionario.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vanoncini.18008\\Desktop\\c#\\concessionaria\\concessionario\\concessionario.csproj": {
+    "C:\\Users\\vano\\Desktop\\programming\\c#\\concessionario\\concessionario\\concessionario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vanoncini.18008\\Desktop\\c#\\concessionaria\\concessionario\\concessionario.csproj",
+        "projectUniqueName": "C:\\Users\\vano\\Desktop\\programming\\c#\\concessionario\\concessionario\\concessionario.csproj",
         "projectName": "concessionario",
-        "projectPath": "C:\\Users\\vanoncini.18008\\Desktop\\c#\\concessionaria\\concessionario\\concessionario.csproj",
-        "packagesPath": "C:\\Users\\vanoncini.18008\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vanoncini.18008\\Desktop\\c#\\concessionaria\\concessionario\\obj\\",
+        "projectPath": "C:\\Users\\vano\\Desktop\\programming\\c#\\concessionario\\concessionario\\concessionario.csproj",
+        "packagesPath": "C:\\Users\\vano\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vano\\Desktop\\programming\\c#\\concessionario\\concessionario\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vanoncini.18008\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vano\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     }
