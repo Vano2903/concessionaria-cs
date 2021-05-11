@@ -29,8 +29,6 @@ namespace concessionario {
                     Console.Clear();
                     Console.WriteLine("ora sei nel main da loggato :D");
                     Home();
-
-
                 } else {
                     bool stopAsk = true;
                     while (stopAsk) {
@@ -93,7 +91,7 @@ namespace concessionario {
                         Console.Clear();
                         Console.WriteLine("ricerca per " + sType + ":\n\ninserisci " + sType + ": ");
                         element = Console.ReadLine();
-                    } while (element != "");
+                    } while (element == "");
 
                     cars = cd.searchMarca(element);
                     printList(cars);
@@ -105,7 +103,7 @@ namespace concessionario {
                         Console.Clear();
                         Console.WriteLine("ricerca per " + sType + ":\n\ninserisci " + sType + ": ");
                         element = Console.ReadLine();
-                    } while (element != "");
+                    } while (element == "");
 
                     cars = cd.searchModello(element);
                     printList(cars);
@@ -117,7 +115,7 @@ namespace concessionario {
                         Console.Clear();
                         Console.WriteLine("ricerca per " + sType + ":\n\ninserisci " + sType + ": ");
                         element = Console.ReadLine();
-                    } while (element != "");
+                    } while (element == "");
 
                     cars = cd.searchColore(element);
                     printList(cars);
@@ -129,7 +127,7 @@ namespace concessionario {
                         Console.Clear();
                         Console.WriteLine("ricerca per " + sType + ":\n\ninserisci " + sType + ": ");
                         element = Console.ReadLine();
-                    } while (element != "");
+                    } while (element == "");
 
                     cars = cd.searchPowerSource(element);
                     printList(cars);
@@ -142,7 +140,7 @@ namespace concessionario {
                         Console.WriteLine("ricerca per " + sType + ":\n\ninserisci " + sType + ": ");
                         element = Console.ReadLine();
                         elementI = int.Parse(element);
-                    } while (element != "" && elementI >= 0);
+                    } while (element == "" && elementI < 0);
 
                     cars = cd.searchKm(elementI);
                     printList(cars);
@@ -155,7 +153,7 @@ namespace concessionario {
                         Console.WriteLine("ricerca per " + sType + ":\n\ninserisci " + sType + ": ");
                         element = Console.ReadLine();
                         elementI = int.Parse(element);
-                    } while (element != "" && elementI >= 0);
+                    } while (element == "" && elementI < 0);
 
                     cars = cd.searchRegistrationYear(elementI);
                     printList(cars);
@@ -163,19 +161,20 @@ namespace concessionario {
 
                 case 7: //between prices
                     sType = "prezzo ";
-                    int elementI2;
+                    float min;
+                    float max;
                     Console.Clear();
                     Console.WriteLine("ricerca per " + sType + ":\n\ninserisci il prezzo minimo: ");
                     do {
                         element = Console.ReadLine();
-                        elementI = element == "" ? -1 : int.Parse(element);
+                        min = element == "" ? -1 : float.Parse(element);
 
                         Console.WriteLine("inserisci il prezzo massimo: ");
                         element = Console.ReadLine();
-                        elementI2 = element == "" ? -1 : int.Parse(element);
-                    } while (elementI < -1 || elementI2 < -1);
+                        max = element == "" ? -1 : float.Parse(element);
+                    } while (min < -1 && max < -1);
 
-                    cars = cd.searchBetweenPrices(elementI, elementI2);
+                    cars = cd.searchBetweenPrices(min, max);
                     printList(cars);
                     return getIdFromList(cars);
 
@@ -211,11 +210,84 @@ namespace concessionario {
         }
 
         static public void HanderBuy() {
+            Console.Clear();
+            Console.WriteLine("Compra Auto\n");
+            string marca;
+            string modello;
+            string colore;
+            string powerSource;
+            int km;
+            int rYear;
+            float price;
+            bool isNew;
+            bool isUsed;
 
+            do {
+                Console.Clear();
+                Console.WriteLine("inserire la marca dell'auto:");
+                marca = Console.ReadLine();
+            } while (marca == "");
+
+            do {
+                Console.Clear();
+                Console.WriteLine("inserire il modello dell'auto:");
+                modello = Console.ReadLine();
+            } while (modello == "");
+
+            do {
+                Console.Clear();
+                Console.WriteLine("inserire il colore dell'auto:");
+                colore = Console.ReadLine();
+            } while (colore == "");
+
+            do {
+                Console.Clear();
+                Console.WriteLine("inserire il tipo di carburante dell'auto:");
+                powerSource = Console.ReadLine();
+            } while (powerSource == "");
+
+            do {
+                Console.Clear();
+                Console.WriteLine("inserire il chilometraggio dell'auto:");
+                km = int.Parse(Console.ReadLine());
+            } while (km < 0);
+
+            do {
+                Console.Clear();
+                Console.WriteLine("inserire l'anno di registrazione dell'auto:");
+                rYear = int.Parse(Console.ReadLine());
+            } while (rYear < 0);
+
+            do {
+                Console.Clear();
+                Console.WriteLine("inserire il prezzo dell'auto:");
+                price = float.Parse(Console.ReadLine());
+            } while (price < 0.0);
+
+            string risp;
+            do {
+                Console.Clear();
+                Console.WriteLine("l'auto é nuova? (s/n):");
+                risp = Console.ReadLine();
+            } while (risp == "s" && risp == "n" && risp == "S" && risp == "N");
+
+            isNew = risp == "s" || risp == "S" ? true : false;
+
+            do {
+                Console.Clear();
+                Console.WriteLine("l'auto é usata? (s/n):");
+                risp = Console.ReadLine();
+            } while (risp == "s" && risp == "n" && risp == "S" && risp == "N");
+
+            isUsed = risp == "s" || risp == "S" ? true : false;
+
+            car toAdd = new car(marca, modello, colore, powerSource, km, rYear, price, isNew, isUsed);
+            cd.buyAuto(toAdd);
+            Console.WriteLine("auto comprata con successo");
+            toAdd.ToString();
         }
 
         static public void HanderSell() {
-
         }
 
         static public (string, string) LoginInput() {
@@ -227,18 +299,16 @@ namespace concessionario {
             pass = Console.ReadLine();
             return (name, pass);
         }
-
         static public void printList(List<car> cars) {
             int i = 0;
-            if (cars.Count == 0) {
+            if (cars.Count != 0) {
+                Console.WriteLine("nessun elemento trovato");
+            } else {
                 foreach (car a in cars) {
                     Console.WriteLine(i.ToString() + ") " + a.ToString());
                 }
-            } else {
-                Console.WriteLine("nessun elemento trovato");
             }
         }
-
         static public int getIdFromList(List<car> cars) {
             int id = -1;
             List<int> idl = new List<int>();
@@ -254,6 +324,5 @@ namespace concessionario {
             } while (!idl.Contains(id));
             return id;
         }
-
     }
 }

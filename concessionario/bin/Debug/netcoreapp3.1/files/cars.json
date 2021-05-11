@@ -1,0 +1,14 @@
+[
+  {
+    "Marca": "fiat",
+    "Modello": "punto",
+    "Colore": "blu",
+    "PowerSource": "benzina",
+    "Id": 2,
+    "Km": 2000,
+    "RegistrationYear": 2021,
+    "Price": 2000.0,
+    "IsNew": false,
+    "IsUsed": true
+  }
+]
