@@ -47,6 +47,7 @@
                 }
             }            return null;        }
 
+        /*
         public (List<car>, bool) customSearch(carSearch obj) {
             //0 marca, 1 modello, 2 colore, 3 powerSource
             //4 km, 5 prezzo min, 6 prezzo max, 7 isNew, 8 isUsed
@@ -60,6 +61,7 @@
 
             return (found, false);
         }
+        */
 
         //costruttori
         public seller() {            cars = new List<car>();            username = "";            password = "";            //lvlAuth = 0;            genId();        }    }}
