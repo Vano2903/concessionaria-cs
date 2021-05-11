@@ -24,11 +24,14 @@ namespace concessionario {
 
             Console.WriteLine("concessionaria D:");
             
-            while (!quit) {
+            while (true) {
                 if (logged) {
                     Console.Clear();
                     Console.WriteLine("ora sei nel main da loggato :D");
-                    Home();
+                    if(Home()) {
+                        cd.save();
+                        Environment.Exit(0);
+                    }
                 } else {
                     bool stopAsk = true;
                     while (stopAsk) {
@@ -43,28 +46,39 @@ namespace concessionario {
             }
         }
 
-        static public void Home() {
+        static public bool Home() {
             string choiseS;
-            int choise;
-            string toPrint = "Opzioni disponibili \n1) ricerca auto \n2) compra auto \n3) vendi auto";
+            int choise = -1;
+            int i = 0;
+            string toPrint = "Opzioni disponibili \n1) ricerca auto \n2) compra auto \n3) vendi auto\n4) esci dal programma";
             do {
                 Console.Clear();
                 Console.WriteLine(toPrint);
                 choiseS = Console.ReadLine();
-                choise = int.Parse(choiseS);
-            } while (choise > 3 || choise <= 0 );
+                try {
+                    choise = int.Parse(choiseS);
+                } catch {
+                    i++;
+                    if (i == 1) {
+                        toPrint += "\n\n...questa volta mettendo un numero vero peró ;-;";
+                    }
+                }
+            } while (choise > 4 || choise <= 0 );
                 switch (choise) {
                     case 1:
                         HandlerSearch();
-                    return;
+                    return false;
 
                     case 2:
                         HanderBuy();
-                    return;
+                    return false;
 
                     case 3:
                         HanderSell();
-                    return;
+                    return false;
+
+                    default:
+                    return true;
                 }
         }
 
@@ -95,7 +109,8 @@ namespace concessionario {
 
                     cars = cd.searchMarca(element);
                     printList(cars);
-                    return getIdFromList(cars);
+                    var poisson = Console.ReadLine();
+                    return -1;//getIdFromList(cars);
 
                 case 2: //modello
                     sType = "modello";

@@ -10,5 +10,17 @@
     "Price": 2000.0,
     "IsNew": false,
     "IsUsed": true
+  },
+  {
+    "Marca": "fiat",
+    "Modello": "punto",
+    "Colore": "rossa",
+    "PowerSource": "disel",
+    "Id": 3,
+    "Km": 200000,
+    "RegistrationYear": 2012,
+    "Price": 500.25,
+    "IsNew": false,
+    "IsUsed": true
   }
 ]
